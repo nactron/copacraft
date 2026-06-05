@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/politica-de-privacidade", "dest": "/politica-de-privacidade.html" },
+    { "src": "/termos-de-uso", "dest": "/termos-de-uso.html" }
+  ]
+}
