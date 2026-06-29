@@ -657,7 +657,7 @@ document.addEventListener('DOMContentLoaded',function(){
     <div class="upsell-divider">— por apenas —</div>
     <div class="upsell-price">R$ 17,89</div>
     <div class="upsell-note">à vista · acesso vitalício · download imediato</div>
-    <a href="https://payt.site/5wCrnm8" target="_blank" class="btn-upsell-yes" onclick="fecharUpsell()">
+    <a href="https://pay.wiapy.com/Z6zLtPJBvRiX" target="_blank" class="btn-upsell-yes" onclick="fecharUpsell()">
       ✅ ADQUIRIR O PACK COMPLETO!
     </a>
     <button class="btn-upsell-no" onclick="irCheckoutBasico()">
@@ -722,7 +722,7 @@ function fecharUpsell(){
 function irCheckoutBasico(){
   fecharUpsell();
   fbq('track','InitiateCheckout',{value:9.90,currency:'BRL',content_name:'Selecao Brasileira'});
-  window.open('https://payt.site/mNCDnmb','_blank');
+  window.open('https://pay.wiapy.com/yvrOQtwou4R','_blank');
 }
 document.getElementById('upsellOverlay').addEventListener('click',function(e){
   if(e.target===this) fecharUpsell();
